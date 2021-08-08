@@ -17,6 +17,7 @@
 		42A6D6C526BD97B2005EB75F /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A6D6C426BD97B2005EB75F /* NetworkController.swift */; };
 		42A6D6C726BD97C3005EB75F /* ImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A6D6C626BD97C3005EB75F /* ImageController.swift */; };
 		42A6D6CA26BD9F74005EB75F /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A6D6C926BD9F74005EB75F /* Pokemon.swift */; };
+		42A6D6CE26BDB9CE005EB75F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A6D6CD26BDB9CE005EB75F /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		42A6D6C426BD97B2005EB75F /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 		42A6D6C626BD97C3005EB75F /* ImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageController.swift; sourceTree = "<group>"; };
 		42A6D6C926BD9F74005EB75F /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		42A6D6CD26BDB9CE005EB75F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			children = (
 				42A6D6AE26BD90A1005EB75F /* PokemonViewController.swift */,
 				42A6D6C126BD940E005EB75F /* PokeyTableViewCell.swift */,
+				42A6D6CD26BDB9CE005EB75F /* DetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				42A6D6C226BD940E005EB75F /* PokeyTableViewCell.swift in Sources */,
 				42A6D6AD26BD90A1005EB75F /* SceneDelegate.swift in Sources */,
 				42A6D6C726BD97C3005EB75F /* ImageController.swift in Sources */,
+				42A6D6CE26BDB9CE005EB75F /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
