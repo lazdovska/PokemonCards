@@ -28,7 +28,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qlc-t5-6cQ">
-                                                    <rect key="frame" x="32.666666666666629" y="58.666666666666657" width="349" height="202.99999999999997"/>
+                                                    <rect key="frame" x="32.666666666666657" y="58.666666666666657" width="349" height="202.99999999999997"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="did-Fl-OGM">
                                                             <rect key="frame" x="0.0" y="0.0" width="156" height="203"/>
@@ -95,7 +95,7 @@
                                             <outlet property="pokeyImageView" destination="did-Fl-OGM" id="6oh-5Q-vvL"/>
                                             <outlet property="subtypeLabel" destination="xHr-jb-cNr" id="DIz-AD-h3m"/>
                                             <outlet property="supertypeLabel" destination="88L-VQ-AT4" id="cSm-mE-SS7"/>
-                                            <segue destination="T6h-VJ-qZG" kind="show" id="rTA-0b-L0W"/>
+                                            <segue destination="T6h-VJ-qZG" kind="show" identifier="segue.details" id="rTA-0b-L0W"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

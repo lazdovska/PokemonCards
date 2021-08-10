@@ -8,33 +8,31 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-
+    
     @IBOutlet weak var detailImage: UIImageView!
     @IBOutlet weak var detailNameLabel: UILabel!
     @IBOutlet weak var detailSupertypeLabel: UILabel!
     @IBOutlet weak var detailHpLabel: UILabel!
     @IBOutlet weak var detailSubtypeLabel: UILabel!
     
-    var image: UIImage? = UIImage ()
-    var nameLabel = ""
-    var supertypeLabel = ""
-    var hpLabel = ""
-    var subtypeLabel = ""
+    var pokemon: Pokemon?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        if image != nil && !nameLabel.isEmpty && !supertypeLabel.isEmpty && !hpLabel.isEmpty && !subtypeLabel.isEmpty{
-            detailImage.image = image
-            detailNameLabel.text = nameLabel
-            detailSupertypeLabel.text = supertypeLabel
-            detailHpLabel.text = hpLabel
-            detailSubtypeLabel.text = subtypeLabel
-            
+        
+        if let pokemon = pokemon {
+            ImageController.getImage(for: pokemon.image) { (image)
+                in
+                self.detailImage.image = image
+            }
+            #warning("Errors in call")
+           /* PokemonViewController.getPokemonData(for: pokemon.name)) { (name)
+                in
+                self.detailNameLabel.name = name
+                
+            }else{
+                print("Pokemon data is nil")
+            }*/
         }
     }
-    
-
-  
-
 }

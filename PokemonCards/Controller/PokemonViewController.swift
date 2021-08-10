@@ -69,36 +69,19 @@ extension PokemonViewController: UITableViewDataSource, UITableViewDelegate {
         return 250
     }
     
-    
     // MARK: - Navigation
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     //  if segue.identifier == "pokemonCell" {
+        if segue.identifier == "segue.details" {
+            guard let vc = segue.destination as? DetailViewController, let row = tableViewOutlet.indexPathForSelectedRow?.row else {return}
+            vc.pokemon = pokey[row]
             
-        if let indexPath = tableViewOutlet.indexPathForSelectedRow {
-            print("IndexPath \(String(describing: indexPath))")
-                let vc = segue.destination as! DetailViewController
-            
-            #warning("var nameLabel has not been defined. Can't find var name in scope.")
-         //   vc.nameLabel = indexPath.name
-            }
             
         }
-        // vc.nameLabel = selectedRow.nameLabel //vai
-        // vc.nameLabel = pokey[selectedRow].nameLabel
-        
-        
-        /*vc.detailImage =
-         vc.detailNameLabel =
-         vc.detailSupertypeLabel =
-         vc.detailHpLabel =
-         vc.detailSubtypeLabel
-         
-         if let indexPath = self.tableViewOutlet.indexPathsForSelectedRow() {
-         if let cell = self.tableViewOutlet.cellforRowAtIndexPath(indexPath) as? UITableViewCell */
-        
-        
     }
+}
+
+
 
 
