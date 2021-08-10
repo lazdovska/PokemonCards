@@ -25,14 +25,14 @@ class DetailViewController: UIViewController {
                 in
                 self.detailImage.image = image
             }
-            #warning("Errors in call")
-           /* PokemonViewController.getPokemonData(for: pokemon.name)) { (name)
-                in
-                self.detailNameLabel.name = name
-                
-            }else{
-                print("Pokemon data is nil")
-            }*/
+            self.detailNameLabel.text = pokemon.name
+            self.detailSupertypeLabel.text = pokemon.supertype
+            self.detailHpLabel.text = pokemon.number
+            self.detailSubtypeLabel.text = pokemon.subtype
+            
+        }else{
+            print("Pokemon data is nil")
         }
     }
 }
+
